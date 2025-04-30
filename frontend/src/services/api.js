@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiUrl = "/choreo-apis/blogify/backend/v1"
+const apiUrl = "https://blog-backend-9cxr.onrender.com/"
 
 const API = axios.create({
   baseURL: 'http://localhost:8000/api/' ? 'http://localhost:8000/api/' : apiUrl,
