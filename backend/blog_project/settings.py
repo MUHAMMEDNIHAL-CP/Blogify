@@ -112,9 +112,11 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'https://522ce093-71c0-41fd-bd31-dfef0255def0.e1-us-east-azure.choreoapps.dev',
+    "https://522ce093-71c0-41fd-bd31-dfef0255def0.e1-us-east-azure.choreoapps.dev", 
 ]
+
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 # JWT configuration
 SIMPLE_JWT = {
