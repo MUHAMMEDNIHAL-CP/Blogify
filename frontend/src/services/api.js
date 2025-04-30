@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const LOCAL_API_URL = 'http://localhost:8000/api/';
-const PROD_API_URL = 'https://a65202b3-2a1e-4215-9445-05d5aabc49aa-dev.e1-us-east-azure.choreoapis.dev/blogify/backend/v1.0';
+const PROD_API_URL = '/choreo-apis/blogify/backend/v1';
 
 const apiUrl = window.location.hostname === 'localhost' ? LOCAL_API_URL : PROD_API_URL;
 
