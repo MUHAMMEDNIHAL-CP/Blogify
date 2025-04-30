@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiUrl = "http://backend-470188808:8000/"
+const apiUrl = "/choreo-apis/backend-470188808:8000"
 
 const API = axios.create({
   baseURL: 'http://localhost:8000/api/' ? 'http://localhost:8000/api/' : apiUrl,
