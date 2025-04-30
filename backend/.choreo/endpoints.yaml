@@ -1,16 +1,8 @@
-swagger: "2.0"
-info:
-  title: "Blogify API"
-  description: "API for Blogify backend"
-  version: "1.0.0"
-host: "blogify-backend.appspot.com"
-schemes:
-  - "https"
-paths:
-  /api/posts:
-    get:
-      description: "Retrieve a list of posts"
-      operationId: "getPosts"
-      responses:
-        200:
-          description: "Success"
+version: 0.1
+
+endpoints:
+  - name: "REST API"
+    port: 8000
+    type: REST
+    networkVisibility: Public
+    context: /
