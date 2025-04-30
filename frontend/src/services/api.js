@@ -1,12 +1,9 @@
 import axios from 'axios';
 
-const LOCAL_API_URL = 'http://localhost:8000/api/';
-const PROD_API_URL = '/choreo-apis/blogify/backend/v1';
-
-const apiUrl = window.location.hostname === 'localhost' ? LOCAL_API_URL : PROD_API_URL;
+const apiUrl = "/choreo-apis/blogify/backend/v1"
 
 const API = axios.create({
-  baseURL: apiUrl,
+  baseURL: 'http://localhost:8000/api/' ? 'http://localhost:8000/api/' : apiUrl,
   headers: {
     'Content-Type': 'application/json',
   },
